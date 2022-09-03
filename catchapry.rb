@@ -31,7 +31,7 @@
 
 def decode_char(letter)
   @morse_code_dictionary[letter]
-end
+
 
 def decode_word(word)
   letters = word.split.map { |letter| decode_char(letter) }
