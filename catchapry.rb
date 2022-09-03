@@ -34,7 +34,7 @@ def decode_char(letter)
 end
 
 def decode_word(word)
-  letters = word.split.map { |letter| decode_char(letter) }
+  letters = word.split.map { |letter| decode_char(letters) }
   letters.join
 end
 
