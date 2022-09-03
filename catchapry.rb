@@ -34,12 +34,12 @@ def decode_char(letter)
 end
 
 def decode_word(word)
-  letters = word.split.map { |letter| decode_char(letters) }
+  letters = word.split.map { |letter| decode_char(letter) }
   letters.join
 end
 
 def decode(code)
-  words = code.split('   ').map { |word| decode_word(word) }
+  words = code.split('    ').map { |word| decode_word(word) }
   words.join('  ')
 end
 
